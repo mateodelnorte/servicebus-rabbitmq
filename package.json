@@ -1,0 +1,24 @@
+{
+  "name": "servicebus-rabbitmq",
+  "version": "0.0.0",
+  "description": "rabbitmq bus provider for servicebus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mattwalters5@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.4.2",
+    "debug": "^2.2.0",
+    "extend": "^3.0.0",
+    "node-uuid": "^1.4.7",
+    "servicebus": "^3.0.0"
+  },
+  "devDependencies": {
+    "longjohn": "^0.2.11",
+    "mocha": "^2.5.3",
+    "should": "^10.0.0",
+    "sinon": "^1.17.5"
+  }
+}
