@@ -1,6 +1,6 @@
 {
   "name": "servicebus-rabbitmq",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "rabbitmq bus provider for servicebus",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "debug": "^2.2.0",
     "extend": "^3.0.0",
     "node-uuid": "^1.4.7",
-    "servicebus": "^3.0.0"
+    "servicebus": "*"
   },
   "devDependencies": {
     "longjohn": "^0.2.11",
