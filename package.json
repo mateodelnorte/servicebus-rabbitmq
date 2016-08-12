@@ -1,6 +1,6 @@
 {
   "name": "servicebus-rabbitmq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "rabbitmq bus provider for servicebus",
   "main": "index.js",
   "scripts": {
