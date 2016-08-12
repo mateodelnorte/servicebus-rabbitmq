@@ -1,5 +1,4 @@
 const amqp = require('amqplib');
-const Bus = require('servicebus').Bus;
 const Correlator = require('./lib/correlator');
 const log = require('debug')('servicebus');
 const events = require('events');
@@ -10,6 +9,15 @@ const PubSubQueue = require('./lib/pubsubqueue');
 const querystring = require('querystring');
 const Queue = require('./lib/queue');
 const util = require('util');
+
+var Bus;
+
+try {
+  const servicebus = require('servicebus');
+  Bus = servicebus.Bus;
+} catch (err) {
+  throw err;
+}
 
 function RabbitMQBus (options) {
   var self = this;
